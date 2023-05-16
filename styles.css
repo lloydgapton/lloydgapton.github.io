@@ -1,5 +1,4 @@
-/* Custom properties/variables  */
-        :root {
+  :root {
           --main-white: #f0f0f0;
           --main-red: #be3144;
           --main-blue: #45567d;
@@ -99,11 +98,14 @@
           text-decoration: none;
           color: var(--main-white);
         }
+        /*
         
         img {
           display: block;
           width: 100%;
+      
         }
+        */
         
         /* nav */
         
@@ -216,14 +218,8 @@
           transition: color 0.3s ease-out;
         }
         
-        .project:hover .code {
+        .project-title:hover .code {
           color: #ff7f50;
-        }
-        
-        .project-image {
-          height: calc(100% - 6.8rem);
-          width: 100%;
-          object-fit: cover;
         }
         
         .project-title {
@@ -255,6 +251,50 @@
           margin-left: 10px;
           transform: translateX(0);
           transition: transform 0.3s ease-out;
+        }
+        
+        .project-image{
+            display:block;
+            text-align:center;
+            width: 100%;
+            height:350px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .logo-wrapper img{
+            width: 40%;
+            margin-bottom: 20px;
+        }
+        .img-text-wrapper {
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            padding-left:30px;
+            padding-right: 30px;
+            position: absolute;
+        }
+        .portfolio-item-wrapper{
+            position: relative;
+        }
+        
+        .img-text-wrapper .subtitle {
+            transition: 1s;
+            color: transparent;
+        }
+
+        .image-blur {
+            transition: 1s;
+            filter: brightness(10%);
+        }
+
+        .img-text-wrapper:hover .subtitle {
+            color: lightseagreen;
+            font-weight: 600;
         }
         
         /* Contact section */
